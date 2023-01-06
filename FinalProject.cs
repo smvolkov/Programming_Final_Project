@@ -14,13 +14,14 @@ void RecNumbers(int numb)
 
 int AskNumber(string numbName)
 {
+    Console.WriteLine();
     Console.WriteLine($"Введите число {numbName}: ");
     int n = int.Parse(Console.ReadLine());
 
     return n;
 }
 
-//RecNumbers(AskNumber("N"));
+RecNumbers(AskNumber("N"));
 
 // Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
 
@@ -37,10 +38,11 @@ int RecSum(int m, int n)
 
 void ShowSum(int s)
 {
+    Console.WriteLine();
     Console.WriteLine($"{s}");
 }
 
-//ShowSum(RecSum(AskNumber("M"), AskNumber("N")));
+ShowSum(RecSum(AskNumber("M"), AskNumber("N")));
 
 // Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. 
 // Даны два неотрицательных числа m и n.
